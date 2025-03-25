@@ -52,7 +52,6 @@ h2 {
   top: 0;
   z-index: 1;
   background-color: black;
-  //   padding-top: 50px;
   padding: 12px 0 12px 0;
 }
 
@@ -96,6 +95,11 @@ h2 {
     gap: 36px;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     .card__title {
       font-size: 24px;
@@ -154,6 +158,11 @@ h2 {
     }
 
     &:nth-child(3n) {
+      grid-column: span 2;
+    }
+
+    &:nth-child(7) {
+      background-color: #f8fcb5;
       grid-column: span 2;
     }
   }
